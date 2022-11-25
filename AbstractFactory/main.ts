@@ -1,7 +1,7 @@
 import { FactoryOrchestrator } from './factory/FactoryOrchestrator';
 import { FactoryType } from './enums/FactoryType';
 
-class FactoryDemo {
+class AbstractFactoryDemo {
   main() {
     // create instance of factory
     const factoryProducer = new FactoryOrchestrator();
@@ -24,4 +24,4 @@ class FactoryDemo {
   }
 }
 
-FactoryDemo.prototype.main();
+AbstractFactoryDemo.prototype.main();

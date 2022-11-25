@@ -4,6 +4,7 @@ import { ShapeType } from "../enums/ShapeType";
 import { Shape } from "../shapes/Shape";
 import { ColorFactory } from "./ColorFactory";
 import { ShapeFactory } from "./ShapeFactory";
+
 export class AndroidFactory {
   getColor(): Color {
     const colorFactory = new ColorFactory();
