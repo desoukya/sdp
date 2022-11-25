@@ -1,13 +1,16 @@
-import { Color } from '../colors/Color';
-import { Blue } from '../colors/Blue';
-import { Circle } from '../shapes/Circle';
-import { Shape } from '../shapes/Shape';
-
+import { Color } from "../colors/Color";
+import { ColorType } from "../enums/ColorType";
+import { ShapeType } from "../enums/ShapeType";
+import { Shape } from "../shapes/Shape";
+import { ColorFactory } from "./ColorFactory";
+import { ShapeFactory } from "./ShapeFactory";
 export class IosFactory {
   getColor(): Color {
-    return new Blue();
+    const colorFactory = new ColorFactory();
+    return colorFactory.getColor(ColorType.BLUE);
   }
   getShape(): Shape {
-    return new Circle();
+    const shapeFactory = new ShapeFactory();
+    return shapeFactory.getShape(ShapeType.CIRCLE);
   }
 }
