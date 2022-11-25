@@ -1,0 +1,14 @@
+{
+  "name": "sdp",
+  "version": "1.0.0",
+  "description": "Software Design Patterns",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "ts-node --esm main.ts"
+  },
+  "devDependencies": {
+    "typescript": "4.9.3",
+    "ts-node": "10.9.1",
+    "@types/node": "18.11.9"
+  }
+}
