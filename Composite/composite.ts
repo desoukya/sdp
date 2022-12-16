@@ -8,18 +8,18 @@ export class Composite extends Component {
    * complex) to or from its child list.
    */
   public add(component: Component): void {
-      this.children.push(component);
-      component.setParent(this);
+    this.children.push(component);
+    component.setParent(this);
   }
 
   public remove(component: Component): void {
-      const componentIndex = this.children.indexOf(component);
-      this.children.splice(componentIndex, 1);
-      component.setParent(null);
+    const componentIndex = this.children.indexOf(component);
+    this.children.splice(componentIndex, 1);
+    component.setParent(null);
   }
 
   public isComposite(): boolean {
-      return true;
+    return true;
   }
 
   /**

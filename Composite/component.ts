@@ -7,11 +7,11 @@ export abstract class Component {
    * provide some default implementation for these methods.
    */
   public setParent(parent: Component | null) {
-      this.parent = parent;
+    this.parent = parent;
   }
 
   public getParent(): Component | null {
-      return this.parent;
+    return this.parent;
   }
 
   /**
@@ -30,7 +30,7 @@ export abstract class Component {
    * component can bear children.
    */
   public isComposite(): boolean {
-      return false;
+    return false;
   }
 
   /**
